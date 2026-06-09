@@ -38,7 +38,7 @@ fi
 
 DIGEST_DAYS="${DIGEST_DAYS:-7}"
 DIGEST_SUBDIR="${DIGEST_SUBDIR:-claude-sessions}"
-CLAUDE_CONFIG_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
+export CLAUDE_CONFIG_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 
 [ -n "${DIGEST_REPO_DIR:-}" ] || die "DIGEST_REPO_DIR is not set (env or $CONF)."
 [ -d "$DIGEST_REPO_DIR/.git" ] || die "$DIGEST_REPO_DIR is not a git checkout."
@@ -56,7 +56,7 @@ git pull --ff-only origin "$BRANCH" >/dev/null 2>&1 || log "  (pull skipped/fail
 OUT="$DIGEST_REPO_DIR/$DIGEST_SUBDIR"
 mkdir -p "$OUT"
 log "rendering last $DIGEST_DAYS day(s) from $CLAUDE_CONFIG_DIR ..."
-CLAUDE_CONFIG_DIR="$CLAUDE_CONFIG_DIR" python3 "$RENDERER" \
+python3 "$RENDERER" \
   --claude-dir "$CLAUDE_CONFIG_DIR" --days "$DIGEST_DAYS" --out "$OUT"
 
 # ---- commit & push ---------------------------------------------------------
