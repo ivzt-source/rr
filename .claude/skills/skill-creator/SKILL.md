@@ -59,14 +59,14 @@ Proactively ask questions about edge cases, input/output formats, example files,
 
 **Run the `research` skill here, once the goal is set and before you draft.** This is the most valuable point to research: the interview captures what the user *knows to tell you*; research captures what they *didn't know to mention*. Invoke the `research` skill (`.claude/skills/research/`) with the captured goal + context and ask it for a focused web sweep covering:
 
-- **Prior art** — is there already an official or popular skill / MCP / tool that does this (check `anthropics/skills`, the plugin marketplace)? Build on or differentiate from it rather than reinventing it.
-- **The real interface** — the actual API / CLI / file formats the skill will touch, from primary docs, so the draft is concrete instead of hand-wavy.
-- **Known gotchas** — footguns, rate limits, auth quirks, version traps worth encoding as instructions.
+- **Prior art** — is there already an official or popular skill, Model Context Protocol server, or tool that does this (check `anthropics/skills`, the plugin marketplace)? Build on or differentiate from it rather than reinventing it.
+- **The real interface** — the actual application programming interface, command-line interface, or file formats the skill will touch, from primary documentation, so the draft is concrete instead of hand-wavy.
+- **Known gotchas** — footguns, rate limits, authentication quirks, version traps worth encoding as instructions.
 - **Competing approaches** — when there's more than one sane way to do this, have research run a quick **council** on "which pattern for this skill" so you don't commit to the wrong one in the first draft.
 
 Keep it focused — a quick sweep that makes the draft better, not an open-ended report that stalls the interview. Cite primary sources for anything the skill will depend on. If research is unavailable (for example, no web access), say so and proceed on the interview alone — research must never block skill creation. See the research skill's `references/embedding.md` for the full contract.
 
-If the `research` skill isn't present, fall back to the original behavior: check available MCPs, research in parallel via subagents if available, otherwise inline. Come prepared with context to reduce burden on the user.
+If the `research` skill isn't present, fall back to the original behavior: check available Model Context Protocol servers, research in parallel via subagents if available, otherwise inline. Come prepared with context to reduce burden on the user.
 
 ### Write the SKILL.md
 

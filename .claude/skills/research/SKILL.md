@@ -13,8 +13,8 @@ It is designed to be invoked two ways:
 
 1. **Standalone** — the user says "research X" / "do a deep dive on Y". You run it directly.
 2. **From inside another skill** — for example, `skill-creator` calls it after capturing intent, to
-   fill in prior art, competing approaches, the real API surface, and known gotchas that the
-   user's interview didn't cover. See [references/embedding.md](references/embedding.md).
+   fill in prior art, competing approaches, the real interface the skill will touch, and known
+   gotchas that the user's interview didn't cover. See [references/embedding.md](references/embedding.md).
 
 The point of running research *after a goal is set* is that the most valuable findings are the
 ones **nobody thought to ask for**. The interview captures what the user knows; research
@@ -42,7 +42,7 @@ context already supplies.
 |------|--------|----------|-------|
 | **Web sweep** (default) | Fan-out web search + fetch + adversarial verify | Open-web facts, prior art, "is this true", surveying tools/libraries | Web access only — works out of the box |
 | **Council** | Several models answer independently → anonymized peer review → chairman synthesis | Hard judgment calls, "which approach", design trade-offs, anything where one model's blind spot is a real risk | Multiple "voices" — Claude subagents (free, default) or external models via one OpenRouter key |
-| **Grounded** | Answers anchored to a fixed corpus via NotebookLM | Reasoning that must stay tied to specific sources (a spec, a paper set, internal docs) with citations and minimal hallucination | A NotebookLM bridge plus Google sign-in |
+| **Grounded** | Answers anchored to a fixed corpus via NotebookLM | Reasoning that must stay tied to specific sources (a specification, a paper set, internal documents) with citations and minimal hallucination | A NotebookLM bridge plus Google sign-in |
 
 You can **chain** modes: web-sweep to gather sources → load them into grounded mode for
 citation-tight answers, or run a council *over* the brief a web-sweep produced to pressure-test
@@ -58,8 +58,9 @@ This is the everyday mode and the only one that needs no setup.
 2. **Fan out** searches across the sub-questions. If a dedicated `deep-research` skill is
    available in the session, prefer delegating to it — it already does fan-out + verification.
    Otherwise use `WebSearch`/`WebFetch` (or web-capable subagents) directly.
-3. **Fetch and read** the most credible primary sources — official docs, source repos, specs,
-   first-party posts — not just summaries. Capture the URL for every claim you'll rely on.
+3. **Fetch and read** the most credible primary sources — official documentation, source
+   repositories, specifications, first-party posts — not just summaries. Capture the source
+   link for every claim you'll rely on.
 4. **Adversarially verify** load-bearing claims. For anything that would change the
    recommendation if wrong, find a second independent source, or spawn a skeptic pass prompted
    to *refute* it. Default to "unverified" when sources conflict, and say so.
@@ -79,28 +80,29 @@ model being confidently wrong*. Based on Karpathy's LLM Council: answer independ
   beyond the session. Spawn several subagents with *deliberately diverse framings* (for example, risk-first,
   user-first, simplest-thing-that-works), have each answer independently, then run an
   anonymized cross-review, then a chairman synthesis.
-- **Optional engine: real multi-vendor via OpenRouter.** One API key, one bill, genuine
-  cross-vendor diversity (GPT, Gemini, Claude, and more). Use when you specifically want
-  *different model families* checking each other, not just different prompts.
+- **Optional engine: real multi-vendor via OpenRouter.** One application programming interface
+  key, one bill, genuine cross-vendor diversity (GPT, Gemini, Claude, and more). Use when you
+  specifically want *different model families* checking each other, not just different prompts.
 
 The full procedure, the anonymized-review prompt, the chairman prompt, and the OpenRouter
 script are in **[references/council.md](references/council.md)**. Read it before running this mode.
 
-> Note on subscriptions: a ChatGPT Plus or Gemini Advanced **UI subscription does not grant API
-> access** — a script can't drive them. Programmatic council needs API keys (OpenRouter for
-> one-key simplicity, or direct OpenAI/Gemini keys; Gemini's API has a free tier). See
+> Note on subscriptions: a ChatGPT Plus or Gemini Advanced **user-interface subscription does
+> not grant application programming interface access** — a script can't drive them. Programmatic
+> council needs application programming interface keys (OpenRouter for one-key simplicity, or
+> direct OpenAI/Gemini keys; Gemini's application programming interface has a free tier). See
 > [references/providers.md](references/providers.md).
 
 ## Mode C — Grounded (NotebookLM)
 
-Best when answers must stay **anchored to a specific set of sources** — a spec, a bundle of
-papers, internal docs — with citations and near-zero hallucination. NotebookLM ingests the
-corpus and answers only from it.
+Best when answers must stay **anchored to a specific set of sources** — a specification, a
+bundle of papers, internal documents — with citations and near-zero hallucination. NotebookLM
+ingests the corpus and answers only from it.
 
-Access is via a community NotebookLM bridge (MCP or CLI) plus Google auth. Setup, the available
-bridges, and the ingest→query→extract flow are in
-**[references/notebooklm.md](references/notebooklm.md)**. If no bridge is configured, fall back
-to web-sweep over the same sources and say grounded mode was unavailable.
+Access is via a community NotebookLM bridge (a Model Context Protocol server or a command-line
+interface) plus Google sign-in. Setup, the available bridges, and the ingest→query→extract flow
+are in **[references/notebooklm.md](references/notebooklm.md)**. If no bridge is configured, fall
+back to web-sweep over the same sources and say grounded mode was unavailable.
 
 ## Output — the research brief
 
@@ -127,7 +129,7 @@ Unless the caller asks for another shape, return this:
 <the call, tied to this session's goal and constraints — not generic advice>
 
 ## Sources
-- [title](url) — <one line on what it supported>
+- [title](link) — <one line on what it supported>
 ```
 
 Rules for the brief:
@@ -153,6 +155,6 @@ and how to pass goal/context in.
 
 - [references/council.md](references/council.md) — multi-model council: procedure, prompts, OpenRouter script
 - [references/notebooklm.md](references/notebooklm.md) — grounded mode: bridges, setup, ingest/query flow
-- [references/providers.md](references/providers.md) — API keys, OpenRouter versus direct, and the subscription-versus-API reality
+- [references/providers.md](references/providers.md) — application programming interface keys, OpenRouter versus direct, and the subscription-versus-key reality
 - [references/embedding.md](references/embedding.md) — calling research from skill-creator and other skills
 - `scripts/council.py` — optional OpenRouter-backed council runner (read references/council.md first)

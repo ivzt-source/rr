@@ -59,11 +59,11 @@ python scripts/council.py \
 ```
 
 The script implements all three stages (independent → anonymized review → chairman) and writes a
-markdown report plus the raw per-stage JSON. Read the script header for flags. Model IDs change —
-check OpenRouter's model list rather than trusting hardcoded names.
+markdown report plus the raw per-stage data as JSON. Read the script header for flags. Model
+identifiers change — check OpenRouter's model list rather than trusting hardcoded names.
 
 See [providers.md](providers.md) for key setup and why a ChatGPT/Gemini **subscription** can't be
-used here (UI subscriptions ≠ API access).
+used here (a user-interface subscription is not the same as application programming interface access).
 
 ## Diversity is the whole value
 

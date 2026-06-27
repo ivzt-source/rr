@@ -33,17 +33,18 @@ skill-creator in this repo (`.claude/skills/skill-creator/`) invokes research th
 The reason this matters: the interview captures **what the user knows to tell you**. Research
 captures **what they didn't know to mention** — that there's already an official skill for this,
 that the obvious library has a known footgun, that two competing patterns exist and the choice
-has consequences, what the real API surface looks like. Feeding that back *before* drafting
+has consequences, what the real interface looks like. Feeding that back *before* drafting
 produces a far better first draft than interview-alone.
 
 ### What research surfaces for skill-creation specifically
 
 - **Prior art** — does an official or popular skill/tool already do this? (Check
-  `anthropics/skills`, the plugin marketplace, MCP servers.) Building on or differentiating from
-  it beats reinventing it.
-- **The real interface** — actual API/CLI/file formats the skill will touch, from primary docs,
-  so the draft is concrete instead of hand-wavy.
-- **Known gotchas** — footguns, rate limits, auth quirks, version traps worth encoding as
+  `anthropics/skills`, the plugin marketplace, Model Context Protocol servers.) Building on or
+  differentiating from it beats reinventing it.
+- **The real interface** — the actual application programming interface, command-line interface,
+  or file formats the skill will touch, from primary documentation, so the draft is concrete
+  instead of hand-wavy.
+- **Known gotchas** — footguns, rate limits, authentication quirks, version traps worth encoding as
   instructions.
 - **Competing approaches** — when there's more than one sane way, a quick council on "which
   pattern for this skill" prevents committing to the wrong one in the first draft.
@@ -53,6 +54,6 @@ produces a far better first draft than interview-alone.
 - Research runs **proactively but briefly** — a focused sweep, not an open-ended report. It
   should make the draft better, not stall the interview.
 - Findings feed the **draft and its instructions**; cite primary sources for anything load-bearing
-  (for example, an API the skill depends on).
+  (for example, an interface the skill depends on).
 - It **degrades gracefully**: no web access → skill-creator proceeds on the interview alone and
   says research was skipped. The hook never blocks skill creation.

@@ -9,8 +9,9 @@ Three stages:
                               favors their own family.
   3. Chairman synthesis     — one model fuses answers + reviews into the final answer.
 
-Why OpenRouter: one API key and one bill for all vendors. A ChatGPT/Gemini *subscription* is a
-UI product and does NOT grant API access, so it cannot be used here. See references/providers.md.
+Why OpenRouter: one application programming interface key and one bill for all vendors. A
+ChatGPT/Gemini *subscription* is a user-interface product and does NOT grant application
+programming interface access, so it cannot be used here. See references/providers.md.
 For the no-key, no-cost alternative, run the council as Claude subagents instead (the default in
 SKILL.md) — this script is only for real cross-vendor diversity.
 
@@ -26,10 +27,10 @@ Usage:
       --out council-result.md
 
 Notes:
-  - Model IDs change over time. Check https://openrouter.ai/models for current ones rather than
-    trusting the examples above.
+  - Model identifiers change over time. Check https://openrouter.ai/models for current ones
+    rather than trusting the examples above.
   - To use a different OpenAI-compatible gateway or a direct vendor, override --base-url and the
-    API key env var (--key-env).
+    application programming interface key environment variable (--key-env).
 """
 
 import argparse
@@ -141,19 +142,20 @@ def main():
     p = argparse.ArgumentParser(description="Run an LLM council via OpenRouter.")
     p.add_argument("--question", required=True)
     p.add_argument("--context-file", help="Path to a file with session goal/context.")
-    p.add_argument("--members", nargs="+", required=True, help="Model IDs for council members.")
-    p.add_argument("--chairman", help="Model ID for synthesis (default: first member).")
+    p.add_argument("--members", nargs="+", required=True,
+                   help="Model identifiers for council members.")
+    p.add_argument("--chairman", help="Model identifier for synthesis (default: first member).")
     p.add_argument("--out", default="council-result.md", help="Markdown output path.")
     p.add_argument("--base-url", default=DEFAULT_BASE_URL,
-                   help="OpenAI-compatible chat-completions URL.")
+                   help="OpenAI-compatible chat-completions web address.")
     p.add_argument("--key-env", default="OPENROUTER_API_KEY",
-                   help="Env var holding the API key.")
+                   help="Environment variable holding the application programming interface key.")
     args = p.parse_args()
 
     key = os.environ.get(args.key_env)
     if not key:
         sys.exit(
-            f"No API key in ${args.key_env}. Set it (see references/providers.md), or run the "
+            f"No application programming interface key in ${args.key_env}. Set it (see references/providers.md), or run the "
             f"council as Claude subagents instead — no key needed (see references/council.md)."
         )
 
