@@ -8,7 +8,7 @@ DOM-level citations back to the source passages.
 Web-sweep is for "what does the open web say"; grounded mode is for "what do *these specific
 sources* say, exactly, with receipts".
 
-## When to use grounded vs web-sweep
+## When to use grounded versus web-sweep
 
 | | Grounded (NotebookLM) | Web sweep |
 |---|---|---|
@@ -16,7 +16,7 @@ sources* say, exactly, with receipts".
 | Strength | Citations tight to passages, low hallucination | Breadth, freshness, finding the unknown |
 | Use for | Reasoning over a spec/paper-set/internal docs | Prior art, "is this true", surveying options |
 
-A common chain: **web-sweep to find the best sources → load them into NotebookLM → grounded Q&A**
+A common chain: **web-sweep to find the best sources → load them into NotebookLM → grounded question-and-answer**
 for citation-tight answers.
 
 ## Bridges (no official API — use a community bridge)
@@ -58,7 +58,7 @@ and treat them as you would any tool with access to your Google account.
 
 ## Fallback
 
-If no bridge is configured or Google auth isn't available (e.g. a headless/sandbox session),
+If no bridge is configured or Google sign-in isn't available (for example, a headless or sandbox session),
 **fall back to web-sweep** over the same source URLs and **state in the brief that grounded mode
 was unavailable** — so the user knows the citations are web-fetched, not NotebookLM-grounded.
 Don't silently substitute.

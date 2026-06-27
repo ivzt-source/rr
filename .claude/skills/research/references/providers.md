@@ -21,7 +21,7 @@ Pick this unless you specifically need different model *families*.
 
 [OpenRouter](https://openrouter.ai) proxies most major models behind a single API key and a
 single invoice. This is the **one-key simplicity** option — the simplest way to get genuine
-cross-vendor diversity (GPT + Gemini + Claude + …) without juggling three billing accounts.
+cross-vendor diversity (GPT, Gemini, Claude, and more) without juggling three billing accounts.
 
 ```bash
 export OPENROUTER_API_KEY=sk-or-...
@@ -32,7 +32,7 @@ export OPENROUTER_API_KEY=sk-or-...
   These change — check OpenRouter's live model list rather than trusting any hardcoded name.
 - Used by `scripts/council.py`.
 
-Trade-off vs. direct keys: slightly higher per-token cost, in exchange for one key and one bill.
+Trade-off versus direct keys: slightly higher per-token cost, in exchange for one key and one bill.
 Given the goal of "simplicity of one API key to manage", this is usually the right pick.
 
 ## Option 3 — Direct vendor API keys
@@ -45,7 +45,7 @@ Most control, least convenience — one key and one bill *per vendor*:
   the way.
 - **Anthropic API** (`ANTHROPIC_API_KEY`) — pay-per-token.
 
-Direct keys avoid OpenRouter's markup but mean managing N accounts and N bills.
+Direct keys avoid OpenRouter's markup but mean managing a separate account and bill for each vendor.
 
 ## Recommendation
 

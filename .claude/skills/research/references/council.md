@@ -8,10 +8,10 @@ answers, but automates the reconcile step and removes brand bias.
 
 ## The three stages
 
-1. **Independent answers.** Give the same question + session context to N members. Each answers
+1. **Independent answers.** Give the same question and session context to every member. Each answers
    on its own, with no view of the others. Diversity is the whole point — see "diversity" below.
 2. **Anonymized peer review.** Give each member the *other* members' answers with **identities
-   stripped** (label them "Response A/B/C…"). Each member critiques and ranks them. Anonymizing
+   stripped** (label them "Response A", "Response B", and so on). Each member critiques and ranks them. Anonymizing
    is the key trick from the original: it stops a model from flattering its own family or
    deferring to a big-name vendor.
 3. **Chairman synthesis.** One designated model receives all answers + all reviews and writes
@@ -21,7 +21,7 @@ answers, but automates the reconcile step and removes brand bias.
 
 ### Default: Claude subagents (no keys, runs here)
 
-Use this unless you specifically need different *vendors*. Spawn N subagents as council members,
+Use this unless you specifically need different *vendors*. Spawn several subagents as council members,
 each with a **deliberately different framing** so they don't converge:
 
 - Member 1 — **risk-first**: "What goes wrong with each option? What's the failure mode?"
@@ -33,7 +33,7 @@ Then:
 
 1. Run all members in the same turn (parallel), each answering independently from the same
    goal+context. Collect their answers.
-2. Anonymize: relabel answers as "Response A/B/C". Spawn a review pass (one subagent per member,
+2. Anonymize: relabel answers as "Response A", "Response B", and so on. Spawn a review pass (one subagent per member,
    or one reviewer over all) that critiques and ranks the anonymized set.
 3. Chairman pass: a final subagent (or you) reads answers + reviews and writes the synthesis,
    calling out where members disagreed and why the chosen position wins.
@@ -46,7 +46,7 @@ buys you.
 
 When you want genuine cross-family diversity, use `scripts/council.py`, which calls multiple
 models through a single [OpenRouter](https://openrouter.ai) key. One key, one bill, any mix of
-GPT / Gemini / Claude / Llama / etc.
+GPT, Gemini, Claude, Llama, and others.
 
 ```bash
 export OPENROUTER_API_KEY=sk-or-...
@@ -71,7 +71,7 @@ A council of near-identical voices is just one voice with extra latency. Whichev
 use, force divergence:
 
 - Different model families (multi-vendor), **or** different framings (subagents), ideally both.
-- Different priors: risk-averse vs. ship-fast, generalist vs. domain-specialist.
+- Different priors: risk-averse versus ship-fast, generalist versus domain-specialist.
 - Keep the review **blind** — never tell a member which answer was whose.
 
 ## Output
@@ -82,6 +82,7 @@ where the question is genuinely hard, not noise to smooth over.
 
 ## Cost & latency note
 
-A council is N answers + N reviews + 1 synthesis ≈ 2N+1 model calls. Worth it for high-stakes or
-contested decisions; overkill for a simple fact lookup (use web-sweep there). State in the brief
+A council is one answer and one review per member, plus a single synthesis — so its cost grows
+with the number of members. Worth it for high-stakes or contested decisions; overkill for a
+simple fact lookup (use web-sweep there). State in the brief
 that a council was run and with which members — it's part of how much to trust the conclusion.

@@ -53,6 +53,6 @@ produces a far better first draft than interview-alone.
 - Research runs **proactively but briefly** — a focused sweep, not an open-ended report. It
   should make the draft better, not stall the interview.
 - Findings feed the **draft and its instructions**; cite primary sources for anything load-bearing
-  (e.g. an API the skill depends on).
+  (for example, an API the skill depends on).
 - It **degrades gracefully**: no web access → skill-creator proceeds on the interview alone and
   says research was skipped. The hook never blocks skill creation.

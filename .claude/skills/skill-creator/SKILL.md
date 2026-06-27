@@ -64,7 +64,7 @@ Proactively ask questions about edge cases, input/output formats, example files,
 - **Known gotchas** — footguns, rate limits, auth quirks, version traps worth encoding as instructions.
 - **Competing approaches** — when there's more than one sane way to do this, have research run a quick **council** on "which pattern for this skill" so you don't commit to the wrong one in the first draft.
 
-Keep it focused — a quick sweep that makes the draft better, not an open-ended report that stalls the interview. Cite primary sources for anything the skill will depend on. If research is unavailable (e.g. no web access), say so and proceed on the interview alone — research must never block skill creation. See the research skill's `references/embedding.md` for the full contract.
+Keep it focused — a quick sweep that makes the draft better, not an open-ended report that stalls the interview. Cite primary sources for anything the skill will depend on. If research is unavailable (for example, no web access), say so and proceed on the interview alone — research must never block skill creation. See the research skill's `references/embedding.md` for the full contract.
 
 If the `research` skill isn't present, fall back to the original behavior: check available MCPs, research in parallel via subagents if available, otherwise inline. Come prepared with context to reduce burden on the user.
 

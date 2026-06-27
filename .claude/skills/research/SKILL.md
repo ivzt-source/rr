@@ -1,6 +1,6 @@
 ---
 name: research
-description: Produce a deep, multi-source, cited research brief grounded in the current session's goal and context. Runs one of three modes — a web sweep (fan-out search + adversarial verification), a multi-model "council" (several models answer, anonymously cross-review, then a chairman synthesizes), or a grounded pass over a fixed source corpus via NotebookLM. Use this skill whenever the user asks to "research", "look into", "do a deep dive", "compare approaches", "find prior art", "survey the options", or wants a fact-checked report — and also call it from inside other skills (e.g. skill-creator) once a goal is set, to surface what the user wouldn't have thought to mention. Prefer this over answering open-ended factual or "which approach" questions from memory.
+description: Produce a deep, multi-source, cited research brief grounded in the current session's goal and context. Runs one of three modes — a web sweep (fan-out search plus adversarial verification), a multi-model "council" (several models answer, anonymously cross-review, then a chairman synthesizes), or a grounded pass over a fixed source corpus via NotebookLM. Use this skill whenever the user asks to "research", "look into", "do a deep dive", "compare approaches", "find prior art", "survey the options", or wants a fact-checked report — and also call it from inside other skills (for example, skill-creator) once a goal is set, to surface what the user wouldn't have thought to mention. Prefer this over answering open-ended factual or "which approach" questions from memory.
 ---
 
 # Research
@@ -12,7 +12,7 @@ gather by reading widely, cross-checking, and writing it up.
 It is designed to be invoked two ways:
 
 1. **Standalone** — the user says "research X" / "do a deep dive on Y". You run it directly.
-2. **From inside another skill** — e.g. `skill-creator` calls it after capturing intent, to
+2. **From inside another skill** — for example, `skill-creator` calls it after capturing intent, to
    fill in prior art, competing approaches, the real API surface, and known gotchas that the
    user's interview didn't cover. See [references/embedding.md](references/embedding.md).
 
@@ -42,7 +42,7 @@ context already supplies.
 |------|--------|----------|-------|
 | **Web sweep** (default) | Fan-out web search + fetch + adversarial verify | Open-web facts, prior art, "is this true", surveying tools/libraries | Web access only — works out of the box |
 | **Council** | Several models answer independently → anonymized peer review → chairman synthesis | Hard judgment calls, "which approach", design trade-offs, anything where one model's blind spot is a real risk | Multiple "voices" — Claude subagents (free, default) or external models via one OpenRouter key |
-| **Grounded** | Q&A anchored to a fixed corpus via NotebookLM | Reasoning that must stay tied to specific sources (a spec, a paper set, internal docs) with citations and minimal hallucination | A NotebookLM bridge + Google auth |
+| **Grounded** | Answers anchored to a fixed corpus via NotebookLM | Reasoning that must stay tied to specific sources (a spec, a paper set, internal docs) with citations and minimal hallucination | A NotebookLM bridge plus Google sign-in |
 
 You can **chain** modes: web-sweep to gather sources → load them into grounded mode for
 citation-tight answers, or run a council *over* the brief a web-sweep produced to pressure-test
@@ -76,11 +76,11 @@ model being confidently wrong*. Based on Karpathy's LLM Council: answer independ
 **blind** → synthesize.
 
 - **Default engine: Claude subagents.** Works fully inside this environment, no keys, no cost
-  beyond the session. Spawn N subagents with *deliberately diverse framings* (e.g. risk-first,
+  beyond the session. Spawn several subagents with *deliberately diverse framings* (for example, risk-first,
   user-first, simplest-thing-that-works), have each answer independently, then run an
   anonymized cross-review, then a chairman synthesis.
 - **Optional engine: real multi-vendor via OpenRouter.** One API key, one bill, genuine
-  cross-vendor diversity (GPT + Gemini + Claude + …). Use when you specifically want
+  cross-vendor diversity (GPT, Gemini, Claude, and more). Use when you specifically want
   *different model families* checking each other, not just different prompts.
 
 The full procedure, the anonymized-review prompt, the chairman prompt, and the OpenRouter
@@ -153,6 +153,6 @@ and how to pass goal/context in.
 
 - [references/council.md](references/council.md) — multi-model council: procedure, prompts, OpenRouter script
 - [references/notebooklm.md](references/notebooklm.md) — grounded mode: bridges, setup, ingest/query flow
-- [references/providers.md](references/providers.md) — API keys, OpenRouter vs direct, the subscription-vs-API reality
+- [references/providers.md](references/providers.md) — API keys, OpenRouter versus direct, and the subscription-versus-API reality
 - [references/embedding.md](references/embedding.md) — calling research from skill-creator and other skills
 - `scripts/council.py` — optional OpenRouter-backed council runner (read references/council.md first)

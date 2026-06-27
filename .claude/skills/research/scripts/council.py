@@ -5,7 +5,8 @@ council.py — run a Karpathy-style "LLM Council" over multiple models via one O
 Three stages:
   1. Independent answers   — every member answers the question on its own.
   2. Anonymized peer review — each member ranks the others' answers, identities stripped
-                              (labeled "Response A/B/..."), so nobody favors their own family.
+                              (labeled "Response A", "Response B", and so on), so nobody
+                              favors their own family.
   3. Chairman synthesis     — one model fuses answers + reviews into the final answer.
 
 Why OpenRouter: one API key and one bill for all vendors. A ChatGPT/Gemini *subscription* is a
