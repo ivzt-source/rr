@@ -6,8 +6,8 @@ on:
   pull_request:
 
 jobs:
-  python-tests:
-    name: Python tests (render_digest)
+  verify:
+    name: Verify (the bar — pytest + shellcheck)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,22 +17,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dev dependencies
-        run: pip install -r requirements-dev.txt
-
-      - name: Run pytest
-        run: python -m pytest
-
-  shellcheck:
-    name: ShellCheck
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Run shellcheck on all scripts
+      - name: Install dependencies
         run: |
+          pip install -r requirements-dev.txt
           sudo apt-get update -qq
           sudo apt-get install -y -qq shellcheck
-          # Lint every tracked shell script; fail the job on any finding.
-          find . -name '*.sh' -not -path './.git/*' -print0 \
-            | xargs -0 -r shellcheck --severity=warning
+
+      # Same gate developers and the agentic loop run locally — one definition
+      # of "done" for both. See LOOP.md.
+      - name: Run the bar
+        run: scripts/verify.sh
