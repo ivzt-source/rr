@@ -48,3 +48,29 @@ Removes the skill + hook and strips only its own entry from
   the `Procedure` steps in `SKILL.md` with the real remote-control behavior.
 - Must be run on the actual desktop machine. Running it inside an ephemeral
   Claude Code cloud/web container won't reach your real `~/.claude`.
+
+---
+
+# Install the `video-editor` skill globally
+
+A "video editor agent": drive real video edits from Claude Code with
+[OpenCut](https://github.com/OpenCut-app/OpenCut), the open-source MIT-licensed
+CapCut alternative. Everything stays local — no upload, watermark, or account.
+
+```bash
+bash install/install-video-editor.sh            # install / update
+bash install/install-video-editor.sh --uninstall
+```
+
+This is a **plain skill** (no hooks, no `settings.json` changes) — the installer
+just copies `SKILL.md` to `~/.claude/skills/video-editor/`. Idempotent.
+
+Two backends, picked automatically:
+
+1. **OpenCut MCP server** (headless) for full timeline editing — trim, reorder,
+   caption, render on autopilot. Needs OpenCut's rewrite build running locally;
+   the skill documents the setup commands.
+2. **ffmpeg fallback** for batch edits (trim, concat, captions, reframe, speed) —
+   works today with no OpenCut setup.
+
+Run `/video-editor`, or just ask Claude to trim/caption/render a clip.
