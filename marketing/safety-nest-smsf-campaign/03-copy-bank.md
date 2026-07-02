@@ -71,6 +71,13 @@ Here's what you *can* do. → Download the AFSL-safe referral guide."
 Don't let that sentence be about you. CPD webinar: insurance and the SMSF
 investment strategy."
 
+## "Saturday Morning" nostalgia hooks (Option C world — see 06-creative-concepts.md)
+
+- "The heroes you watched on Saturday mornings never lost their shield. You just did."
+- "Your kids think you're invincible. Your rollover paperwork disagrees."
+- "You built the fortress (nice SMSF, by the way). Now about that shield…"
+- "Somewhere between the cereal bowl and the super rollover, the shield got left behind."
+
 ## Email nurture — subject lines
 
 1. Your gap report (plus the one thing to check today)

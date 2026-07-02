@@ -61,6 +61,10 @@ LinkedIn (B2B)─┘                                    sequence)            eve
   - Hook C (story/advertorial, Kennedy long-copy style): "The accountant set up the
     SMSF perfectly. Nobody mentioned the life insurance…" → advertorial page → gap check.
 - **Format:** lead-form ads + landing-page conversions; UGC-style talking-head video.
+- **Video creative options (see `06-creative-concepts.md`):** A) UGC reveal (control),
+  B) 16-month-clock motion graphics, C) **"Saturday Morning"** — 80s-cartoon nostalgia
+  spot targeting the 35–50 dad avatar; test as animatic against the control before
+  funding full animation.
 
 ## Campaign 3 — LinkedIn + industry pubs: "The Referral Engine" (B2B, accountants)
 
@@ -80,6 +84,8 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 
 - Pre-roll on SMSF/property-investing/personal-finance AU content.
 - 60–90s explainer of the gap; CTA to calculator. Feeds retargeting pool.
+- The "Saturday Morning" 60s hero cut (06, Option C) is the natural pre-roll lead;
+  6s bumper cut for frequency.
 
 ## Follow-up machine (Kennedy: the fortune is in the follow-up)
 
