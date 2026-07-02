@@ -56,9 +56,10 @@ illustrative scenario — RG 234.)*
 ## Meta short hooks (test matrix)
 
 - "Your rollover form had no checkbox for 'keep my life insurance.' There's a reason."
-- "37 pages of SMSF setup documents. Zero about the insurance you just cancelled. [RESEARCH: verify page count claim or drop]"
-- "SMSF trustees: your investment strategy is legally required to consider insurance. Has yours?"
+- "Left a small balance in your old fund to keep your life cover? There's a 16-month clock on it. (SIS Act s68AAA.)"
+- "SMSF trustees: your investment strategy must consider member insurance — Reg 4.09(2)(e). Your auditor checks. Has yours got an answer?"
 - "You fired your super fund. Fair. But it took your life insurance on the way out."
+- "Only around 13–15% of SMSFs hold life insurance for members, industry estimates suggest. The other ~85% have an audit question to answer."
 
 ## LinkedIn (accountants)
 
@@ -75,7 +76,7 @@ investment strategy."
 1. Your gap report (plus the one thing to check today)
 2. The day your old fund cancelled your cover
 3. Reg 4.09: the sentence your investment strategy is missing
-4. "I'll just keep the old fund open" — the trap [RESEARCH: verify mechanics]
+4. "I'll just keep the old fund open" — the 16-month trap (verified: SIS Act s68AAA; contribution or written opt-in required)
 5. What insurance costs at 44 vs 49 (why waiting is expensive)
 6. Case study: the audit question that started it
 7. Your Gap Check expires Friday (true-deadline mechanics only)
@@ -84,8 +85,8 @@ investment strategy."
 
 | Objection | Rebuttal spine |
 |---|---|
-| "I'll self-insure, my balance is big" | TPD/income risk dwarfs balance mid-career; sequencing risk |
-| "I kept $6k in the old fund to keep cover" | PYS/PMIF rules can still cancel inactive-account cover [RESEARCH: confirm] |
-| "Insurance inside SMSF is complicated" | We handle underwriting; premiums can be fund-paid & may be deductible to the fund [RESEARCH: confirm tax treatment wording] |
-| "My accountant would have told me" | They often legally can't recommend products — that's the system, not your accountant |
+| "I'll self-insure, my balance is big" | Average balance at establishment is ~$363k and falling — mid-career TPD/income risk dwarfs it; sequencing risk |
+| "I kept money in the old fund to keep cover" | **VERIFIED killer rebuttal:** SIS Act s68AAA cancels that cover after 16 months without contributions, even with a balance — unless you contribute or lodge a written opt-in. Warning letters (months 9/12/15) often go to stale addresses |
+| "Insurance inside SMSF is complicated" | Your investment strategy already has to answer the insurance question every year (Reg 4.09(2)(e)); we handle underwriting. [Tax-deductibility wording: confirm with product/legal before use] |
+| "My accountant would have told me" | Since 2016 they legally can't recommend insurance products — that's the system, not your accountant |
 | "I'll do it later" | Insurability is health-dependent; later can mean loadings/exclusions |

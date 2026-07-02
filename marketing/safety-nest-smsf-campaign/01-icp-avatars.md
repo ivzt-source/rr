@@ -6,28 +6,40 @@
 > Facts marked **[RESEARCH]** are filled from the verified research fact base
 > (`04-research-fact-base.md`).
 
-## The core insight (the "conversation in their head")
+## The core insight (the "conversation in their head") — VERIFIED
 
-A person rolling their super out of an APRA-regulated fund into an SMSF typically
-**forfeits the group life / TPD / income-protection cover attached to the old fund**.
-Almost nobody warns them at the moment it happens; the accountant who sets up the SMSF
-is usually **not licensed to advise on insurance** and so says nothing specific.
-Result: a newly-minted SMSF trustee — often the family's primary breadwinner, often
-with debt and dependants — is walking around **uninsured without knowing it**, while
-also being **legally required** (SIS Reg 4.09) to at least *consider* insurance in the
-fund's investment strategy. **[RESEARCH: confirm mechanics, timing, exceptions]**
+A person rolling their super out of an APRA-regulated fund into an SMSF loses the
+group life / TPD / income-protection cover attached to the old fund — and, crucially,
+**even the "smart" workaround fails**: trustees who deliberately leave a balance in
+the old fund to keep group cover have it **automatically cancelled after 16 months of
+no contributions** under SIS Act s68AAA (Protecting Your Super, since 2019) unless
+they make a contribution or lodge a written opt-in. The warning letters at months
+9/12/15 often go to stale addresses. The accountant who sets up the SMSF is usually
+**not licensed to recommend insurance** (accountants' exemption repealed 1 July 2016)
+and so says nothing specific. Meanwhile the new trustee is **legally required**
+(SIS Reg 4.09(2)(e)) to consider member insurance in the fund's investment strategy —
+their auditor checks it every year, with a $6,600-per-trustee penalty regime behind it.
+ASIC's REP 824 (Nov 2025) names unreplaced insurance as a key risk of SMSF
+establishment. Full citations: `04-research-fact-base.md` + `04b-fact-base-addendum.md`.
 
-That gap — *"you just lost your safety net and no one told you"* — is the campaign.
-Hence the brand fit: **Safety Nest**.
+That gap — *"you just lost your safety net and no one told you (even if you thought
+you'd covered it)"* — is the campaign. Hence the brand fit: **Safety Nest**.
 
 ---
 
 ## Avatar 1 — "The Control-Taker" (primary: SMSF establisher / new trustee)
 
-### Demographics [RESEARCH: verify against ATO trustee statistics]
-- Age: TBC (hypothesis: 35–55, with new-establishment median trending younger)
-- Household: couple, often with dependent children and a mortgage
-- Balance: TBC median at establishment
+### Demographics — verified against ATO/Class data (see 04b §A)
+- **Age: median 46 at establishment; largest new-member cohort 35–44 (~39%); >50% of
+  new members under 50.** Younger than the SMSF stereotype — prime life-insurance age.
+- **Household: 68% of SMSFs are two-member funds** — target the couple, not the
+  individual; the spouse is the emotional decision-influencer.
+- **Income: most common new-entrant band $100k–$150k (~26%), then $150k–$200k (~14%)**
+  — breadwinners with mortgages, not retirees.
+- **Balance at establishment: ~$363k average and falling (−29% in FY25)** — too small
+  to self-insure a family, strengthening the cover case.
+- Volume: ~40,000+ new funds/yr (~85,000+ new trustees), record quarters through
+  Mar 2026. Only ~13–15% of SMSFs hold member insurance.
 - Occupation: business owners, professionals, senior managers, property investors
 - Location: Australia-wide, skew metro
 
@@ -72,12 +84,19 @@ Hence the brand fit: **Safety Nest**.
 
 ## Avatar 2 — "The Trusted Technician" (channel: accountant / SMSF administrator / adviser)
 
-### Profile [RESEARCH: verify licensing limits + numbers]
+### Profile — licensing limits verified (see 04b §C)
 - Suburban accounting practice partner or SMSF-specialist administrator
-- Sets up N SMSFs per year; trusted-adviser status with clients
-- **Licensing constraint:** unlicensed accountants generally *cannot* recommend
-  insurance products — but CAN identify the gap and refer. That constraint is our
-  wedge: we make referral compliant, easy, and valuable.
+- Sets up SMSFs regularly; trusted-adviser status with clients
+- **Licensing constraint (verified):** since the accountants' exemption was repealed
+  (1 July 2016), unlicensed accountants cannot recommend insurance products — even
+  limited AFS licensees max out at class-of-product advice. The limited-licence
+  regime collapsed (~2,787 advisers in 2018 → ~339 in 2025), so most accountants
+  doing SMSF work are structurally unable to fix the client's insurance gap.
+- **But they CAN make a "mere referral"** (Corps Reg 7.6.01(1)(e)/(ea)): point the
+  client to a licensee, with any benefit disclosed at the time and client consent to
+  pass details. That's the wedge: we productize the compliant referral.
+- **Anti-hawking design rule (s992A):** the client initiates or gives positive,
+  clear consent before Safety Nest makes contact — build it into the referral kit.
 
 ### Their 3am
 - Fear: a client dies uninsured after an SMSF *they* set up → blame, reputation, even

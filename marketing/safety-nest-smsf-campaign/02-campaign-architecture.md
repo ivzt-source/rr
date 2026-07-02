@@ -74,7 +74,7 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 **Consumer nurture (email + SMS, 14 touches / 30 days):**
 1. Deliver magnet → 2. The gap explained (story) → 3. SIS 4.09 compliance angle →
 4. Cost-of-waiting (underwriting gets harder with age/health) → 5. Case study →
-6. Objection: "I'll just keep my old fund open" (the partial-rollover trap **[RESEARCH]**) →
+6. Objection: "I'll just keep my old fund open" (the verified 16-month s68AAA trap) →
 7. Offer + deadline → … recycle to long-term weekly "Trustee Briefing".
 **Urgency that's true (RG 234-safe):** health events and birthdays genuinely change
 premiums/insurability; audit season deadlines; NOT fake scarcity.
