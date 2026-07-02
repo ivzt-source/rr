@@ -29,8 +29,11 @@ die() { printf 'ERROR: %s\n' "$1" >&2; exit 1; }
 # ---- load config file (does not override already-set env) -------------------
 if [ -f "$CONF" ]; then
   while IFS='=' read -r k v; do
-    case "$k" in ''|\#*) continue;; esac
     k="$(echo "$k" | tr -d '[:space:]')"
+    # Skip blanks, comments, and any non-identifier key BEFORE the indirect
+    # expansion below — `${!k}` on an invalid name (e.g. an indented comment
+    # like "  # note") is a FATAL expansion error that `|| true` cannot rescue.
+    case "$k" in ''|\#*|[0-9]*|*[!A-Za-z0-9_]*) continue;; esac
     v="${v#"${v%%[![:space:]]*}"}"   # ltrim
     [ -z "${!k:-}" ] && export "$k=$v" || true
   done < "$CONF"
@@ -46,7 +49,11 @@ CLAUDE_CONFIG_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 command -v python3 >/dev/null 2>&1 || die "python3 is required."
 
 cd "$DIGEST_REPO_DIR"
-BRANCH="${DIGEST_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}"
+# Resolve the branch even on an unborn HEAD (a freshly-created repo cloned
+# before its first commit — exactly the setup the docs describe). git rev-parse
+# --abbrev-ref HEAD exits 128 there and would abort under set -e; symbolic-ref
+# returns the unborn branch name (e.g. "main") without needing a commit.
+BRANCH="${DIGEST_BRANCH:-$(git symbolic-ref --short -q HEAD || echo main)}"
 
 # ---- refresh local checkout (best effort) ----------------------------------
 log "pulling latest on $BRANCH ..."
