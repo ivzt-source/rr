@@ -50,7 +50,11 @@ you'd covered it)"* — is the campaign. Hence the brand fit: **Safety Nest**.
 - **3am fears:** getting the compliance wrong; ATO penalties; being the family's single
   point of failure; "what happens to my family if I'm not here"
 - **Frustrations:** jargon, being sold to by institutions they just escaped, forms
-- **Watering holes:** [RESEARCH: forums, publications, podcasts, Facebook groups]
+- **Watering holes (verified):** SuperGuide, Grow SMSF and admin-platform content;
+  SMSF Trustee Empowerment Day (Benchmark Media's trustee-facing event — sponsorable);
+  property-investing and personal-finance YouTube/podcasts; ~40% of new trustees now
+  research setup with AI tools (Investment Trends 2026) — digital-first, self-directed
+  researchers
 
 ### Kennedy avatar questions
 | Question | Answer |
@@ -62,7 +66,7 @@ you'd covered it)"* — is the campaign. Hence the brand fit: **Safety Nest**.
 | Trends in their business/life | New SMSF establishment, rollover in progress or just completed |
 | What do they secretly desire most? | To be *right* about going self-managed; to look competent |
 | Built-in bias in decision-making | DIY-minded, research-heavy, comparison shoppers, allergic to salesmen |
-| Who else sells to them, and how? | SMSF admin platforms, accountants, property spruikers **[RESEARCH]** |
+| Who else sells to them, and how? | Verified: NobleOak and Real Insurance (D2C SMSF pages), Insurance Watch (comparator, #1 organic), smsfinsurance.com.au (white-label via admin firms); TAL/Zurich/AIA only via advisers. Nobody leads with the gap message — see 04b §D1 |
 | Who else has tried and failed? | Generic life insurers with generic messages |
 
 ### Awareness state (Schwartz overlay Kennedy uses)
@@ -110,8 +114,10 @@ you'd covered it)"* — is the campaign. Hence the brand fit: **Safety Nest**.
 ### Offer shape (B2B)
 - Co-branded "SMSF Insurance Gap Checklist" for their client-onboarding pack
 - Compliant referral workflow (no advice required from them)
-- CPD-eligible webinar: "Insurance and the SMSF investment strategy: what unlicensed
-  accountants can and can't say" **[RESEARCH: CPD rules]**
+- Webinar: "Insurance and the SMSF investment strategy: what unlicensed accountants
+  can and can't say" — pitch as CPD-eligible if it meets CPA Australia / CA ANZ
+  verifiable-CPD criteria (open item: confirm accreditation route before promoting
+  as CPD)
 
 ---
 

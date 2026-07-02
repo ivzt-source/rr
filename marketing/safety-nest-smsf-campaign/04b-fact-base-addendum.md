@@ -98,7 +98,82 @@ stock of >670k funds of which only ~13–15% hold member insurance (below).
   referrals are outside the prohibition. Design the referral kit so the CLIENT
   initiates or gives positive, clear consent before any Safety Nest contact.
 
-## D. Channels & competitors
+## D. Channels & competitors (verified July 2026)
 
-*(Pending final compilation from the channels/competitors research agent — to be
-added in this file's next revision.)*
+### D1. Competitive landscape — the gap-angle is OPEN
+
+**Strategic headline: no insurer or broker currently leads paid marketing with the
+"you lost your cover when you rolled over" message.** The fact is ubiquitous as
+*educational* content (SuperGuide, Heffron, Grow SMSF, Real Insurance FAQs) but nobody
+owns it as a campaign position. Closest: Grow SMSF's blog article (an admin firm, not
+an insurer) and one paragraph in a NobleOak insights piece. The Reg 4.09 compliance
+hook is likewise used by content players (DBA Lawyers, Arrow Equities) but is no
+insurer's headline. **Safety Nest can own this position.**
+
+| Player | Channel | SMSF proposition | Notes |
+|---|---|---|---|
+| **NobleOak** | D2C | Dedicated SMSF page; Life+TPD+IP owned by SMSF, "no adviser needed"; portability out of the SMSF without cancelling | Main D2C incumbent; SEO content cluster + LinkedIn; testing "Save 20%" landing page; Canstar/Money awards as trust signals |
+| **Real Insurance** (Greenstone) | D2C | "Real Life Cover for SMSF", 18–64, quote funnel + call centre | The other true direct player |
+| **Insurance Watch** | Broker/comparator | #1 organic for SMSF life insurance terms; ~10 insurers compared; 10% first-yr cashback | Runs the 84%-uninsured stat (Plan for Life) as content |
+| **smsfinsurance.com.au** | Online (AIA-underwritten) | Group cover via SMSF Master Trust; white-labelled to admin firms | The admin-firm white-label channel already exists — validates B2B distribution |
+| **TAL / Zurich / AIA / Acenda (ex-MLC)** | Adviser-only | Retail policies structurable under SMSF ownership | No consumer-facing SMSF campaigns found |
+| **iExtend** | Adviser B2B | Life co-ownership of lapsing policies | No SMSF angle found — not a direct competitor |
+
+Consumer SERPs for "SMSF life insurance": insurancewatch.com.au (#1), nobleoak.com.au,
+smsfinsurance.com.au, realinsurance.com.au, compareclub.com.au. Big advised insurers
+surface only via PDS PDFs — weak consumer presence.
+
+**Additional underinsurance stat:** Plan for Life via Insurance Watch — **84% of SMSF
+members aged 18–64 hold no life insurance** ⚠️ (single retail-broker source; sits
+consistently with the 13–15% fund-level figures).
+
+### D2. B2B industry media (accountants / SMSF professionals)
+
+- **SMSF Adviser** (Momentum Media): display, sponsored webcasts (sponsor picks topic/
+  guests), podcast ads; annual Technical Strategy Day with limited sponsorships.
+  Media kit: smsfadviser.com/images/advertise/SMSF_MK.pdf.
+- **Accountants Daily** (Momentum): DISCOVER weekly sponsored e-bulletin to **50,000+
+  accountants** ⚠️; display, sponsored content, podcast, webcasts, awards sponsorship.
+- **selfmanagedsuper / SMS Magazine** (Benchmark Media): practitioner magazine +
+  newsletter; **SMSF Professionals Day** (Syd/Mel/Bris, May 2026) and — notably —
+  **SMSF Trustee Empowerment Day**, a *trustee-facing* event = rare direct-to-avatar
+  sponsorship. Media kit gated (sales@bmarkmedia.com.au).
+- **SMSF Association**: National Conference (1,300+ delegates, Adelaide 18–20 Feb 2026,
+  public sponsorship brochure), Technical Summit, year-round sponsorships with lead-gen.
+- Also: Financial Standard, ifa, Money Management, Professional Planner, Accounting Times.
+
+### D3. Platform rules (AU, current)
+
+- **Google Ads:** since 30 Aug 2022, ALL financial-services advertisers targeting
+  Australia need **Financial Services Verification** — third-party check by G2 Risk
+  Solutions proving AFSL authorisation or exemption (~5 days), then Google identity
+  verification. Insurance is in scope and allowed once verified. **Start this before
+  any media plan — it gates launch.**
+- **Meta:** from ~4 Feb 2025, AU-targeted financial-products ads require advertiser
+  verification (AFSL number or declared exemption) via the beneficiary-and-payer
+  Compliance Check; ads carry a clickable "Paid for By" disclaimer with the licence
+  number, visible in Ad Library. 18+ targeting mandatory. (AU is NOT under the US
+  special-ad-category targeting lock, per available docs ⚠️.)
+- **LinkedIn:** job title / job function ("Accounting") / member-skills (e.g.
+  "Self-Managed Superannuation Funds", verify audience size in Campaign Manager) /
+  groups / industry targeting; 300-member minimum, practical floor ~50k for sponsored
+  content. No AU AFSL-verification requirement found (UK FCA rule exists; AU absence
+  is inference ⚠️).
+
+### D4. Search demand — needs tooling, proxies only
+
+- **No public AU volumes** for "smsf setup" / "smsf life insurance" / "smsf insurance
+  requirements" — must be pulled from Google Keyword Planner or Ahrefs/Semrush (AU geo)
+  during media planning. (Negative finding, multi-search verified.)
+- Demand proxies: **record 48,464 new SMSFs in calendar 2025** (vs 37,701 in 2024 —
+  ATO quarterly data via multiple write-ups); 14,494 new funds in Sep-2025 qtr alone;
+  68% of new members under 50. ~40% of new SMSFs researched setup with AI tools ⚠️
+  (Vanguard/Investment Trends 2026, single source) — digital-first audience.
+- **Latent demand, direct evidence:** **26% of newly established SMSFs report an unmet
+  advice need on INSURANCE** (Vanguard/Investment Trends via SMSF Adviser, 2025/26 ⚠️
+  single source) — roughly one in four new trustees already knows something's missing.
+- Cost expectations: "smsf" CPC ≈ **A$22** (WordStream 2016–17 AU dataset — dated but
+  keyword-specific ⚠️); AU finance/insurance clicks commonly **A$20–50+**; insurance is
+  historically among Australia's most expensive AdWords categories. Budget models
+  should assume premium CPCs on gap-intent terms and cheaper CPCs on
+  education/problem-unaware content angles.

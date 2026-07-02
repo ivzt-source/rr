@@ -31,7 +31,12 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 
 ## Campaign 1 — Google Search: "The Interceptor" (highest intent, start here)
 
-- **Ad groups** [RESEARCH: exact terms & volumes]:
+- **Prerequisite: Google Financial Services Verification** (G2 Risk Solutions AFSL
+  check + identity verification, ~5 days) — start before media planning; it gates launch.
+- **Volumes:** no public AU numbers exist — pull "smsf", "smsf setup", "smsf life
+  insurance", "smsf insurance requirements" from Keyword Planner (AU geo) at planning.
+  Expect premium CPCs ("smsf" ≈ A$22 in dated data; AU finance clicks A$20–50+).
+- **Ad groups**:
   - Setup intent: `smsf setup`, `how to set up smsf`, `smsf setup cost`, `best smsf provider`
   - Gap intent: `smsf life insurance`, `life insurance smsf`, `smsf insurance requirements`,
     `do I need insurance in my smsf`, `smsf investment strategy insurance`
@@ -43,6 +48,9 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 
 ## Campaign 2 — Meta (Facebook/Instagram): "The Reveal" (scale + retargeting)
 
+- **Prerequisite:** Meta AU financial-products verification (since Feb 2025) — declare
+  the FPS category, complete the beneficiary-and-payer Compliance Check with the AFSL
+  number; ads carry a public "Paid for By" disclaimer. 18+ targeting mandatory.
 - **Audiences:** interest stacks (SMSF, super platforms, property investing), lookalikes
   from lead list, and retargeting of all site visitors.
 - **Creative (problem-unaware → aware):**
@@ -57,8 +65,12 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 ## Campaign 3 — LinkedIn + industry pubs: "The Referral Engine" (B2B, accountants)
 
 - **Targeting:** job titles (accountant, partner, SMSF administrator/specialist),
-  member groups, ABM list of SMSF admin firms. [RESEARCH: pubs — SMSF Adviser,
-  Accountants Daily, selfmanagedsuper — sponsorship/EDM options]
+  member-skills targeting (test "Self-Managed Superannuation Funds" skill; 300-member
+  minimum, ~50k practical floor), member groups, ABM list of SMSF admin firms.
+- **Verified publication options (04b §D2):** SMSF Adviser sponsored webcasts and
+  podcast; Accountants Daily DISCOVER e-bulletin (50,000+ accountants); SMS Magazine
+  + SMSF Professionals Day; SMSF Association National Conference (1,300+ delegates)
+  and year-round sponsorship; SMSF Trustee Empowerment Day for the consumer avatar.
 - **Offer ladder:** one-pager download → CPD webinar → referral-partner kit →
   co-branded client checklist.
 - **Ads:** "You set up the SMSF. Is your client still insured?" / "The AFSL-safe way
@@ -87,7 +99,8 @@ premiums/insurability; audit season deadlines; NOT fake scarcity.
 - Unique phone numbers/UTMs per campaign; call tracking on landing pages.
 - Kill/scale rules: kill ad sets > 2× target CPL after statistically meaningful spend;
   scale winners 20%/week.
-- LTV anchor [RESEARCH: avg annual premium × retention years × commission structure].
+- LTV anchor: business input, not research — model as avg annual premium × expected
+  retention years × margin/commission structure once product economics are set.
 
 ## Budget allocation (initial 90 days, revise on data)
 
