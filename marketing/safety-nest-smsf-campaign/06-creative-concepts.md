@@ -2,8 +2,8 @@
 
 > Creative options for the Meta "Reveal" and YouTube "Documentary" layers
 > (see `02-campaign-architecture.md`). Option C is the 80s-nostalgia cartoon
-> concept (producer: Merav). Every script ships only after the
-> `05-compliance-guardrails.md` pre-flight checklist.
+> concept. Every script ships only after the `05-compliance-guardrails.md`
+> pre-flight checklist.
 
 ## Option A — "The Reveal" (talking-head UGC)
 Straight-to-camera trustee story: rolled over, found out at audit time the cover was
@@ -70,7 +70,7 @@ artifacts, synth score. VO: warm, gravelly "movie-trailer dad" voice.)*
    shield. "You set up the fortress. The shield isn't your department — but the
    referral can be." Reuses assets, speaks the licensing truth.
 
-### Production notes for Merav
+### Production notes (for the video producer)
 - **Style, not IP:** original characters and world only — an "in the style of
   mid-80s/early-90s syndicated cartoon" pastiche (limited animation, cel shading,
   painted backgrounds, 12fps action, chromatic bloom, tape grain). Do **not** imitate
