@@ -14,6 +14,56 @@
 4. **"The 10-minute fix for the gap your accountant couldn't mention."** (intrigue +
    channel-friendly — validates the accountant rather than blaming them)
 
+## Fear-driver bank (client direction: fear is ONE of the emotional drivers)
+
+*Three verified fear lanes — rotate, don't stack. Every stat must carry its date.*
+
+1. **ATO / compliance fear:** penalties of $6,600 per individual trustee for
+   operating-standard breaches (20 penalty units × $330, from Nov 2024, not payable
+   from fund assets); the ATO wrote to 17,700 trustees in 2019 with auditors copied;
+   late lodgment gets a fund delisted from Super Fund Lookup (blocks rollovers and
+   employer contributions).
+2. **Nest-egg fear:** you built the fund to protect the family's future — an
+   uninsured death converts a growth plan into a fire sale (shares and property
+   don't pay out; policies do).
+3. **Family-exposure fear:** the A5 illustrative story (44-year-old father of three,
+   $358k cover, cancelled unnoticed, died before the family found out) — RUN ONLY as
+   a clearly-labelled illustrative scenario or replace with a substantiated
+   first-party case (RG 234).
+
+**The statistics-led fear ad (client concept, defensible build):**
+> "11,687 SMSFs were established in the March 2026 quarter (ATO). Industry estimates
+> suggest fewer than 1 in 5 SMSFs ever hold life cover for their members (Cooper
+> Review 2010: <13%; sector estimate 2024: ~15%). That's roughly 9,000+ new funds
+> — and the families behind them — likely going without the safety net their old
+> fund used to provide."
+- ⚠️ Compliance note on the original concept: "only XXX fulfilled their compliance
+  obligations" is NOT claimable — no data exists on strategy-compliance rates, and
+  implying mass non-compliance would fail RG 234's overall-impression test. The
+  insurance-holding version above is the defensible cousin: every number is sourced
+  and dated, and the arithmetic ("roughly 9,000+") is transparent. Penalty-exposure
+  and family-exposure dollar figures may be used ONLY as clearly-labelled
+  illustrative arithmetic (e.g. "$6,600 per trustee × 2 trustees = $13,200 a couple
+  could face"), never as claimed aggregates.
+
+## Urgency bank (all TRUE mechanisms — RG 234-safe)
+
+- **The 16-month clock (new setups):** cover left in the old fund dies at 16 months
+  of inactivity unless topped up or opted in — every recent rollover has a running
+  countdown.
+- **Age-banded premiums:** ~$39–50/mo per $500k at 50 vs ~4× at 60 (dated comparison
+  data) — "the expensive option is waiting."
+- **Health-dependent insurability:** cover is bought with health, paid with money —
+  every year of "later" risks loadings, exclusions, or decline.
+
+## Newsjacking lane (current-events hooks — borrow the moment, never give tax advice)
+
+- Div 296 / $3M super tax / unrealised-gains debate and SMSF residential-property
+  rules: real frustrations of exactly our demo. Usage pattern: empathize + pivot —
+  "You can't control what Canberra does to super tax. You can control whether your
+  family is protected if you're not here." Keep Safety Nest out of the tax argument
+  itself (no predictions, no advice); refresh hooks from `07` keyword research.
+
 ## Google Search ads (RSA assets)
 
 **Headlines:**
@@ -114,6 +164,33 @@ review" — they have accountants for that. Anti-churn framing mandatory.*
 - "Your kids think you're invincible. Your rollover paperwork disagrees."
 - "You built the fortress (nice SMSF, by the way). Now about that shield…"
 - "Somewhere between the cereal bowl and the super rollover, the shield got left behind."
+
+## "Email your accountant" lead magnet — the template itself (draft)
+
+> **Subject: Question about insurance in our SMSF**
+>
+> Hi [Name],
+>
+> I've been reviewing a few things about [Fund Name] and realised I'm not sure
+> where we landed on insurance for members.
+>
+> Could you confirm:
+> 1. Was life/TPD insurance ever set up through the fund for me [or member names]?
+> 2. Does our investment strategy document that we considered insurance for each
+>    member (I understand SIS Reg 4.09 requires the consideration to be recorded)?
+> 3. If we do hold cover somewhere — inside the fund or in an old super account —
+>    when was it last reviewed?
+>
+> Not asking you for a recommendation — I know that's outside what you can advise
+> on. Just want to confirm what exists and what's documented before our next audit.
+>
+> Thanks,
+> [Trustee name]
+
+*Mechanic: the accountant can confirm facts but legally can't recommend cover — the
+honest reply routes the trustee to an insurance specialist. The template also
+pre-frames the licensing boundary respectfully (protects the accountant
+relationship and seeds the paused B2B channel).*
 
 ## Email nurture — subject lines
 

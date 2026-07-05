@@ -86,7 +86,15 @@ you'd covered it)"* — is the campaign. Hence the brand fit: **Safety Nest**.
 
 ---
 
-## Avatar 2 — "The Trusted Technician" (channel: accountant / SMSF administrator / adviser)
+> **Core targeting note (client direction, July 2026):** the commercial bullseye across
+> ALL consumer avatars is **men aged 30–50, at any stage of the SMSF journey** — they
+> underwrite well, premium-grow with age, and build a durable book. Avatars 1 and 3
+> are entry *moments* into the same core demo, not separate demos.
+
+## Avatar 2 — "The Trusted Technician" (channel: accountant / SMSF administrator / adviser) — ⏸ PAUSED
+
+*Client decision (July 2026): direct-to-consumer first. Avatar retained for future
+activation; the consumer "email your accountant" magnet seeds this channel meanwhile.*
 
 ### Profile — licensing limits verified (see 04b §C)
 - Suburban accounting practice partner or SMSF-specialist administrator

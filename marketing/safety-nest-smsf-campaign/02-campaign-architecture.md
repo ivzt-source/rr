@@ -19,15 +19,22 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 
 ## The lead magnets (Kennedy: "sell the bait, not the animal")
 
-1. **"The SMSF Insurance Gap Report"** (consumer) — free PDF + 2-min self-check:
-   "Find out in 10 minutes whether your rollover cancelled your life cover."
-2. **Insurance Gap Calculator** (interactive) — enter old fund + balance + dependants →
-   estimated cover lost & replacement cost. High perceived value, quiz-style, captures email.
-3. **"Investment Strategy Insurance Clause" template** (consumer + accountant) — the
-   paragraph every SMSF investment strategy legally needs (SIS Reg 4.09). Magnetic
-   because it solves a compliance to-do, and it *is* our conversation starter.
-4. **B2B: "What unlicensed accountants can and can't say about insurance"** one-pager
-   + CPD webinar registration.
+1. **The Insurance Gap Calculator** ⭐ HERO OFFER — already built. Free interactive
+   tool: enter situation (old fund, balance, dependants, debts) → the gap in dollars.
+   Every campaign drives here. Quiz-style, captures email, output doubles as the
+   compliant "we considered insurance" record for their fund file.
+2. **"Email your accountant" template** (NEW — client idea) — pre-written email the
+   trustee sends their own accountant: *"Was member insurance ever set up or reviewed
+   for our fund? Can you confirm our investment strategy documents the insurance
+   consideration?"* Powerful boomerang mechanic: the accountant legally cannot
+   recommend a product, so the honest answer is "you should speak to an insurance
+   specialist" — and the trustee is already standing in front of one. Also seeds the
+   paused B2B channel organically.
+3. **"The SMSF Insurance Gap Report"** — free PDF + 2-min self-check (supporting
+   magnet for content/retargeting).
+4. **"Investment Strategy Insurance Clause" template** — the paragraph every strategy
+   legally needs (Reg 4.09). NOTE: this is a *magnet*, never a review-service offer —
+   Safety Nest's USP is insurance specialty, not strategy/audit services.
 
 ## Campaign 1 — Google Search: "The Interceptor" (highest intent, start here)
 
@@ -48,6 +55,13 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 
 ## Campaign 2 — Meta (Facebook/Instagram): "The Reveal" (scale + retargeting)
 
+- **Strategy (client direction):** let the algorithm find the audience — broad /
+  Advantage+ targeting rather than thin interest stacks (no native SMSF interest
+  exists anyway). In a crowded feed where we're not selling an SMSF product, **the
+  offer and creative do the targeting**: the calculator, the accountant-email
+  template, and thumb-stopping creative (e.g. "Saturday Morning"). Feed conversion
+  signal (calculator completions, not just leads) so the algorithm optimizes to the
+  right people.
 - **Prerequisite:** Meta AU financial-products verification (since Feb 2025) — declare
   the FPS category, complete the beneficiary-and-payer Compliance Check with the AFSL
   number; ads carry a public "Paid for By" disclaimer. 18+ targeting mandatory.
@@ -66,7 +80,11 @@ LinkedIn (B2B)─┘                                    sequence)            eve
   spot targeting the 35–50 dad avatar; test as animatic against the control before
   funding full animation.
 
-## Campaign 3 — LinkedIn + industry pubs: "The Referral Engine" (B2B, accountants)
+## Campaign 3 — LinkedIn + industry pubs: "The Referral Engine" (B2B, accountants) — ⏸ PAUSED
+
+*Client decision (July 2026): direct-to-consumer first; accountant channel paused.
+Keep the kit concepts on the shelf — the "email your accountant" consumer lead magnet
+(below) seeds this channel organically in the meantime.*
 
 - **Targeting:** job titles (accountant, partner, SMSF administrator/specialist),
   member-skills targeting (test "Self-Managed Superannuation Funds" skill; 300-member
@@ -80,12 +98,21 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 - **Ads:** "You set up the SMSF. Is your client still insured?" / "The AFSL-safe way
   to close your clients' insurance gap."
 
-## Campaign 4 — YouTube: "The Documentary" (authority + cheap reach)
+## Campaign 4 — YouTube + Display: "The Interceptor's Net" (PROMOTED — client direction)
 
-- Pre-roll on SMSF/property-investing/personal-finance AU content.
-- 60–90s explainer of the gap; CTA to calculator. Feeds retargeting pool.
-- The "Saturday Morning" 60s hero cut (06, Option C) is the natural pre-roll lead;
-  6s bumper cut for frequency.
+*Elevated from support role: keyword- and site-based audiences are how we find the
+core 30–50 male demo wherever they are in the SMSF journey.*
+
+- **Custom segments (Google Ads):** built from what people SEARCH ("smsf setup",
+  "smsf life insurance", "smsf investment strategy template", "transfer super to
+  smsf"…) and what SITES they visit (superguide.com.au, propertychat.com.au, admin
+  platforms, ATO SMSF pages) — per-avatar keyword sets from `07` keyword research.
+- **Demographic layer:** 30–50, skew male, AU. Exclusions: 60+, "retiring soon"
+  life event, pension-phase keyword segments.
+- **Placements:** pre-roll on SMSF/property-investing/personal-finance AU channels;
+  Display on finance content via the same custom segments.
+- **Creative:** "Saturday Morning" 60s hero cut as pre-roll lead; 6s bumper for
+  frequency; 60–90s gap explainer; all CTAs → calculator. Feeds retargeting pool.
 
 ## Campaign 5 — "The Unanswered Question" (established trustees — quickest to cash)
 
@@ -107,18 +134,19 @@ review, which is commoditised and already serviced by their accountant.*
 - **Display/YouTube/Demand Gen:** Google custom segments built from SMSF
   audit/strategy/fees keywords (no native SMSF interest exists on Meta; no SMSF
   in-market segment on Google).
-- **Three offers mapped to entry state:** Gap Check (no cover), **Cover Transfer
-  Assessment** ("don't cancel — transfer": original underwriting, served waiting
-  periods and expired exclusions carried over where takeover terms apply), Old-Fund
-  Cover Check (the "ghost cover" kept in an APRA account — one-third of trustees who
-  keep an APRA account do it for the insurance; PYS has been cancelling exactly that
-  since 2019).
-- **B2B tie-in:** ~99% of these funds lodge via a tax agent — the accountant referral
-  kit (Campaign 3) gets a second seasonal push at audit time: "Every SMSF you lodge
-  has to answer the insurance question. Here's the compliant way to hand it off."
+- **Three offers mapped to entry state** (all insurance-only; the client can't and
+  won't offer strategy/audit services — insurance specialty IS the USP):
+  1. No cover → **the Insurance Gap Calculator** (hero, already built).
+  2. Stale/legacy cover → **Cover Transfer Assessment** ("don't cancel — transfer":
+     original underwriting, served waiting periods and expired exclusions carried
+     over where takeover terms apply).
+  3. Unsure what they have → **"Email your accountant" template** — pre-written email
+     asking whether member insurance was ever set up or reviewed; the accountant
+     legally can't recommend a product, so the answer boomerangs to a specialist.
 - **Copy discipline:** validate the fund, isolate the gap ("The fund's fine. One
   clause is missing."). Anti-churn framing is mandatory — never "cancel and switch";
-  always "check, transfer, or document the No."
+  always "check or transfer." Audit season is *timing and fear-proof*, never the
+  offer.
 
 ## Follow-up machine (Kennedy: the fortune is in the follow-up)
 
