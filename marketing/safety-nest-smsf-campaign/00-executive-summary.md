@@ -12,6 +12,22 @@ method (Market → Message → Media) on an adversarially-verified research fact
 | Accountants typically help set up SMSFs | ✅ Confirmed — and since the accountants' exemption repeal (1 July 2016) most are legally UNABLE to recommend replacement insurance (the limited-licence regime collapsed ~88%). They can make disclosed "mere referrals" — which is exactly the B2B product. |
 | Addressable market = owner + the team who set it up | ✅ Confirmed as a two-avatar campaign: ~85,000+ new trustees/yr (plus 670k+ existing funds), and the accountant/administrator channel — for whom a compliant referral path solves a real liability/service gap. |
 
+## The third avatar — established trustees (quickest to cash)
+
+Added July 2026 (fact base: `04c`). The stock dwarfs the flow: **~536k funds are
+5+ years old** (average fund age 13.5 years), **~79% have no adviser**, and the
+honest core is the **~370k wholly-accumulation funds (average member age 52)**.
+ASIC surveys show 19% never considered insurance at setup and 30% have no
+arrangements if something happens. Every one of these funds must answer the
+insurance question annually (Reg 4.09, auditor-checked) — and nobody markets to
+that moment. Offer discipline: the offer is always the **insurance piece** (gap
+check / cover transfer / old-fund check) — never a commoditised "strategy review."
+The anti-churn "don't cancel — transfer" mechanic (takeover terms preserve original
+underwriting) converts qualified prospects without new medicals. Targeting cut-off:
+accumulation phase, under ~58 — premiums and product entry-age caps make 60+ a
+dishonest sell. Verdict on "quickest to cash": **supported, with that targeting
+condition** — no setup lag, an annual forcing event, and no gatekeeper adviser.
+
 ## The one-sentence strategy
 
 Own the message nobody in the market currently runs as paid advertising — **"your SMSF
@@ -33,6 +49,7 @@ insurers hide behind PDFs — nobody leads with the gap.
 | `03-copy-bank.md` | USP candidates, search RSAs, Meta hooks and advertorial, LinkedIn B2B ads, email subjects, objection/rebuttal bank — all RG 234-aware |
 | `04-research-fact-base.md` | Adversarially-verified facts (3-vote refutation panel) with citations and copy cautions |
 | `04b-fact-base-addendum.md` | Gap-fill research: market stats, SIS Reg 4.09 mechanics, licensing/referral law, competitors, media options, platform rules, search-demand proxies |
+| `04c-fact-base-established-trustees.md` | Established-trustee segment: fund-age stock, set-and-forget evidence, transfer/takeover mechanics, compliance-calendar media plan |
 | `05-compliance-guardrails.md` | Operating rules from RG 234 (9 June 2026 edition) + pre-flight checklist per asset |
 
 ## Before spending a dollar (launch gates)

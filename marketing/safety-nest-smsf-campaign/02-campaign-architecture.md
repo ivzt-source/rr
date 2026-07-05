@@ -87,6 +87,39 @@ LinkedIn (B2B)─┘                                    sequence)            eve
 - The "Saturday Morning" 60s hero cut (06, Option C) is the natural pre-roll lead;
   6s bumper cut for frequency.
 
+## Campaign 5 — "The Unanswered Question" (established trustees — quickest to cash)
+
+*Avatar 3 (`01-icp-avatars.md`), fact base `04c`. Offer rule: the offer is ALWAYS
+insurance (gap check / cover transfer / old-fund check) — never a generic strategy
+review, which is commoditised and already serviced by their accountant.*
+
+- **Audience:** trustees of funds established 5+ years ago, accumulation phase,
+  under ~58. Exclusions: pension-phase signals (negative keywords: drawdown, TTR,
+  wind-up), Google Life Events "retiring soon" as exclusion.
+- **Search (always-on):** "smsf investment strategy template/example" (the insurance
+  hook hides inside this keyword — every compliant template must address insurance;
+  land on the Insurance Clause template), "smsf life insurance", "smsf insurance
+  requirements", "smsf audit checklist" (ad copy pivots to the insurance question the
+  auditor asks).
+- **Bursts on the compliance calendar:** Jan–Mar ("before your auditor asks"),
+  early May (15 May lodgment peak), Sep–Oct (review season; SMSF Trustee Empowerment
+  Day sponsorship — Syd 13 Oct / Mel 15 Oct 2026).
+- **Display/YouTube/Demand Gen:** Google custom segments built from SMSF
+  audit/strategy/fees keywords (no native SMSF interest exists on Meta; no SMSF
+  in-market segment on Google).
+- **Three offers mapped to entry state:** Gap Check (no cover), **Cover Transfer
+  Assessment** ("don't cancel — transfer": original underwriting, served waiting
+  periods and expired exclusions carried over where takeover terms apply), Old-Fund
+  Cover Check (the "ghost cover" kept in an APRA account — one-third of trustees who
+  keep an APRA account do it for the insurance; PYS has been cancelling exactly that
+  since 2019).
+- **B2B tie-in:** ~99% of these funds lodge via a tax agent — the accountant referral
+  kit (Campaign 3) gets a second seasonal push at audit time: "Every SMSF you lodge
+  has to answer the insurance question. Here's the compliant way to hand it off."
+- **Copy discipline:** validate the fund, isolate the gap ("The fund's fine. One
+  clause is missing."). Anti-churn framing is mandatory — never "cancel and switch";
+  always "check, transfer, or document the No."
+
 ## Follow-up machine (Kennedy: the fortune is in the follow-up)
 
 **Consumer nurture (email + SMS, 14 touches / 30 days):**
@@ -112,7 +145,12 @@ premiums/insurability; audit season deadlines; NOT fake scarcity.
 
 | Channel | Share | Role |
 |---|---|---|
-| Google Search | 40% | Harvest existing intent |
+| Google Search | 40% | Harvest existing intent (new establishers + established trustees) |
 | Meta | 30% | Create demand + retarget |
 | LinkedIn/B2B pubs | 20% | Build referral channel |
 | YouTube | 10% | Authority + audience pool |
+
+Campaign 5 shares the Search/Display allocation with seasonal bursts (Jan–Mar,
+early May, Sep–Oct); given the segment's size (~536k funds >5yrs old, ~79%
+unadvised) and zero setup lag, expect it to earn a growing share of budget once
+CPL data confirms the quickest-to-cash hypothesis.

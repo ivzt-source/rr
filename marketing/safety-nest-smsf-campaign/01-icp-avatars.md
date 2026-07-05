@@ -121,6 +121,78 @@ you'd covered it)"* — is the campaign. Hence the brand fit: **Safety Nest**.
 
 ---
 
+## Avatar 3 — "The Set-and-Forgetter" (established trustee, fund never reviewed) 💰 quickest-to-cash
+
+*Deep-dive fact base: `04c-fact-base-established-trustees.md`. Offer-design rule: the
+offer is ALWAYS the insurance piece (gap check / missing clause / cover transfer) —
+never a generic "strategy review", which is commoditised and already serviced by
+their accountant/adviser.*
+
+### Who they are (verified)
+- Fund established **5–15+ years ago** (~80% of the 672k stock is >5 years old;
+  average fund age 13.5 years). The investment strategy is the template from setup
+  day — the ATO has publicly called the 0–100%-ranges template invalid.
+- **Age ~45–59, accumulation phase** (the honest core: ~370k wholly-accumulation
+  funds, average member age 52, avg member balance ~$773k). Mortgage, dependants,
+  peak earning years. **60+/pension-phase members are excluded by design** —
+  wrong product fit and uneconomic premiums.
+- **~79% have no financial adviser.** Nobody is reviewing anything — least of all
+  the insurance question.
+- Insurance status: probably none (84% of members 18–64 had no life cover of any
+  kind — Plan for Life 2014; ~15% of funds hold member cover — 2024 estimate), or
+  stale cover from another era, or a dead APRA-fund account they *think* still
+  carries their old group cover (cancelled since July 2019 if inactive — the
+  legitimate PYS angle for this avatar).
+
+### Their 3am (different from the new establisher's)
+- Not setup anxiety — **accumulated guilt**. They know the fund's paperwork is
+  running on autopilot. Every May the accountant lodges, every year the auditor
+  signs, and every year the insurance question stays unanswered.
+- The specific fear: "I'm 52, the mortgage isn't done, the kids aren't done —
+  and if I'm gone, the fund holds shares and a property, not a payout."
+- Identity: proud of the SMSF ("my fund beat the industry funds"). Any message
+  implying they've been negligent bounces off. **Message must validate the fund and
+  isolate the one gap:** "The fund's fine. One clause is missing."
+
+### Awareness state
+- Problem-aware-adjacent: ASIC REP 576 found 19% never considered insurance at
+  setup and 30% have no arrangements if something happens — and 26% of newer
+  trustees self-report an unmet insurance advice need. They half-know. The ad's
+  job is to convert vague guilt into one specific, checkable question.
+
+### Why quickest to cash (verified logic)
+1. Structure exists — no setup lag between lead and policy.
+2. **Annual forcing event built in:** ~99% lodge via a tax agent by 15 May; the
+   auditor asks the insurance question every year.
+3. Unadvised (~79%) — no gatekeeper adviser to displace.
+4. **Takeover terms** let qualified prospects with existing retail cover move
+   without new medicals — "don't cancel, transfer" converts without underwriting
+   friction.
+5. Caveat that protects the economics: target accumulation-phase under-60s only;
+   premiums at 60+ (~$164–240/mo per $500k) make new stepped cover a hard, often
+   dishonest sell.
+
+### The three entry states → three insurance-only offers
+| Entry state | Offer |
+|---|---|
+| No cover at all (the 84%) | **10-Minute SMSF Insurance Gap Check** — "the one question your fund has to answer every year; here's your answer, documented" |
+| Stale/legacy cover (old retail policy, or grandfathered pre-2014 trauma/own-occ) | **Cover Transfer Assessment** — "don't cancel — transfer; keep your original underwriting, served waiting periods, expired exclusions" |
+| Ghost cover (old APRA account kept 'for the insurance') | **Old-Fund Cover Check** — "the law changed in 2019; that cover may already be gone. Find out in one call" |
+
+### Objections (this avatar's specific ones)
+| Objection | Rebuttal spine |
+|---|---|
+| "My accountant handles the fund" | They lodge and reconcile — since 2016 they legally can't recommend insurance. That's the one piece nobody's holding |
+| "We've been fine for 12 years" | The fund has. The 84% stat isn't about funds — it's about the people in them |
+| "My balance is nearly a million" | It's in shares and a property. TPD at 52 doesn't sell tidily; a payout does |
+| "Too old / too expensive now" | At 50 it's ~$39–50/mo per $500k; at 60 it's 4× that. The expensive option is next year |
+| "I've got old cover somewhere" | If it's in an old super account you stopped contributing to, the 2019 law likely cancelled it. Check takes minutes |
+
+### Trigger timing (the compliance calendar as media calendar)
+Jan–Mar (accounts prep, auditor appointment) → **15 May** (lodgment peak) →
+30 Jun (EOFY) → Sep–Oct (new-FY review season + SMSF Trustee Empowerment Day).
+Burst budgets around these; always-on search underneath.
+
 ## Message–Market–Media matrix (summary)
 
 | Market | Awareness | Message spine | Primary media |

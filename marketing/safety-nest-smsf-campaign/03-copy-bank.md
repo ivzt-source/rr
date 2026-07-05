@@ -71,6 +71,43 @@ Here's what you *can* do. → Download the AFSL-safe referral guide."
 Don't let that sentence be about you. CPD webinar: insurance and the SMSF
 investment strategy."
 
+## Avatar 3 — Established trustee ("The Set-and-Forgetter") hooks
+
+*Rule: validate the fund, isolate the insurance gap. Never pitch a "strategy
+review" — they have accountants for that. Anti-churn framing mandatory.*
+
+**Search RSAs:**
+- Headlines: "Run an SMSF for Years?" / "One Question, Every Audit" / "The Insurance
+  Clause Most Miss" / "Don't Cancel — Transfer" / "SMSF Cover Check, 10 Min" /
+  "Old Fund Kept for Insurance?"
+- Descriptions: "Your fund's investment strategy must consider member insurance —
+  every year. Get your answer documented, free." / "Existing cover? Transfer options
+  can keep your original underwriting. Check before you cancel anything."
+
+**Meta/Display hooks:**
+- "Your SMSF has beaten the market for 12 years. It still can't answer one question:
+  what happens to your family if you're not here?"
+- "The fund's fine. One clause is missing." (creative shows a beautifully kept fund
+  file with a single blank page)
+- "Every May your accountant lodges. Every year the auditor signs. And every year,
+  one question stays unanswered."
+- "Kept your old super account 'for the insurance'? The law changed in 2019. That
+  cover may already be gone — check it in minutes."
+- "84% of SMSF members aged 18–64 held no life insurance of any kind (Plan for Life,
+  2014 — and nobody's published a better number since). Which side are you on?"
+- "At 50, $500k of cover runs about $39–50 a month. At 60, roughly four times that.
+  The expensive option is waiting."
+
+**The transfer angle (anti-churn, regulator-friendly):**
+- "Don't cancel your old policy. Transfer it. Takeover terms can carry your original
+  underwriting, served waiting periods and expired exclusions into your SMSF — no
+  new medicals in many cases."
+
+**Accountant seasonal (audit-time B2B):**
+- "Every SMSF return you lodge sits on an investment strategy that must consider
+  insurance. You can't recommend a policy. You can hand your client a compliant
+  answer. Here's how."
+
 ## "Saturday Morning" nostalgia hooks (Option C world — see 06-creative-concepts.md)
 
 - "The heroes you watched on Saturday mornings never lost their shield. You just did."
