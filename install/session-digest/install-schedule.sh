@@ -108,7 +108,10 @@ EOF
 else
   command -v crontab >/dev/null 2>&1 || { echo "ERROR: crontab not found." >&2; exit 1; }
   LINE="$MIN $HOUR * * * /bin/bash $APP_DIR/session-digest.sh >> $LOG 2>&1"
-  ( crontab -l 2>/dev/null | grep -v "$APP_DIR/session-digest.sh"; echo "$LINE" ) | crontab -
+  # `|| true` so an empty crontab (crontab -l fails) or an all-filtered crontab
+  # (grep -v matches nothing) does not abort the subshell under errexit/pipefail
+  # before `echo "$LINE"` runs — which would install an empty crontab.
+  ( crontab -l 2>/dev/null | grep -v "$APP_DIR/session-digest.sh" || true; echo "$LINE" ) | crontab -
   echo "✓ scheduled via cron daily at $(printf '%02d:%02d' "$HOUR" "$MIN")"
 fi
 

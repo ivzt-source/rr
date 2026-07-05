@@ -66,6 +66,26 @@ if isinstance(ss, list):
     json.dump(d, open(p, "w"), indent=2); open(p, "a").write("\n")
 PY
     info "removed hook entries from $SETTINGS"
+  elif [ -f "$SETTINGS" ] && [ "$JSON_ENGINE" = "jq" ]; then
+    # jq installs the hook (see below), so jq must be able to remove it too —
+    # otherwise uninstall deletes the hook script but leaves a dangling
+    # SessionStart entry that errors on every session start.
+    tmp="$(mktemp)"
+    if jq --arg hook "$HOOK_PATH" '
+        .hooks //= {}
+        | .hooks.SessionStart = (
+            (.hooks.SessionStart // [])
+            | map(.hooks = ((.hooks // []) | map(select(.command != $hook)))
+                  | select((.hooks | length) > 0)))
+        | if (.hooks.SessionStart | length) == 0 then .hooks |= del(.SessionStart) else . end
+        | if (.hooks | length) == 0 then del(.hooks) else . end
+      ' "$SETTINGS" > "$tmp"; then
+      mv "$tmp" "$SETTINGS"
+      info "removed hook entries from $SETTINGS (jq)"
+    else
+      rm -f "$tmp"
+      warn "could not process $SETTINGS with jq — remove the SessionStart entry by hand if needed"
+    fi
   else
     warn "leave $SETTINGS untouched (remove the SessionStart entry by hand if needed)"
   fi
@@ -215,8 +235,17 @@ PY
 else
   # jq fallback
   tmp="$(mktemp)"
+  # Mirror the python3 path: if the existing file isn't valid JSON, back it up
+  # and start fresh rather than failing outright.
+  if [ -f "$SETTINGS" ] && ! jq empty "$SETTINGS" >/dev/null 2>&1; then
+    mv "$SETTINGS" "$SETTINGS.bak"
+    warn "existing $SETTINGS was not valid JSON; backed up to $SETTINGS.bak"
+  fi
   [ -f "$SETTINGS" ] || echo '{}' > "$SETTINGS"
-  jq --arg hook "$HOOK_PATH" '
+  # Check jq's exit status explicitly: `jq ... > "$tmp" && mv` would let a jq
+  # failure fall through to the success message (errexit does not fire on the
+  # left of &&), leaving the hook unregistered while claiming success.
+  if jq --arg hook "$HOOK_PATH" '
     .hooks //= {} |
     .hooks.SessionStart = (
       ((.hooks.SessionStart // [])
@@ -224,8 +253,15 @@ else
               | select((.hooks | length) > 0)))
       + [ {matcher:"startup", hooks:[{type:"command", command:$hook}]},
           {matcher:"resume",  hooks:[{type:"command", command:$hook}]} ]
-    )' "$SETTINGS" > "$tmp" && mv "$tmp" "$SETTINGS"
-  info "settings -> merged SessionStart hook into $SETTINGS (jq)"
+    )' "$SETTINGS" > "$tmp"; then
+    mv "$tmp" "$SETTINGS"
+    info "settings -> merged SessionStart hook into $SETTINGS (jq)"
+  else
+    rm -f "$tmp"
+    warn "could not merge SessionStart hook into $SETTINGS with jq — hook NOT registered."
+    warn "fix or remove $SETTINGS and re-run, or add the hook by hand (see above)."
+    exit 1
+  fi
 fi
 
 echo

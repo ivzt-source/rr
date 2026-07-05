@@ -66,6 +66,8 @@ def load_session(path):
             o = json.loads(line)
         except json.JSONDecodeError:
             continue
+        if o.get("isSidechain"):
+            continue  # subagent/sidechain line, not part of the user session
         typ = o.get("type")
         if typ not in ("user", "assistant"):
             continue
@@ -120,7 +122,12 @@ def main():
     a = parse_args()
     proj_root = os.path.join(a.claude_dir, "projects")
     cutoff = datetime.now(timezone.utc) - timedelta(days=a.days)
-    files = glob.glob(os.path.join(proj_root, "**", "*.jsonl"), recursive=True)
+    # Only top-level session transcripts (projects/<project>/<session>.jsonl).
+    # Deeper files — e.g. projects/<project>/<session>/subagents/**/*.jsonl —
+    # are subagent/sidechain transcripts that share the parent's sessionId; a
+    # recursive glob would render them as separate sessions and collide on the
+    # {day}-{sid[:8]} filename, silently overwriting the real session.
+    files = glob.glob(os.path.join(proj_root, "*", "*.jsonl"))
 
     sessions = []
     for f in files:
@@ -150,11 +157,21 @@ def main():
              ""]
 
     by_day = {}
+    used_names = set()
     for s in sessions:
         day = day_of(s.get("ts_last"))
         short = (s.get("sid") or os.path.basename(s["path"]))[:8]
         title = " ".join(s["first_user"].split())[:80]
         fname = "{}-{}.md".format(day, short)
+        # Guard against filename collisions (two sessions sharing an 8-char id
+        # prefix on the same day) so one digest never silently overwrites another.
+        if fname in used_names:
+            stem = "{}-{}".format(day, short)
+            i = 2
+            while "{}-{}.md".format(stem, i) in used_names:
+                i += 1
+            fname = "{}-{}.md".format(stem, i)
+        used_names.add(fname)
         fpath = os.path.join(out_sessions, fname)
 
         body = ["# {}".format(title or "(untitled session)"), ""]
