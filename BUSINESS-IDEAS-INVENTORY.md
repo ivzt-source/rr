@@ -3,7 +3,7 @@
 > **Goal:** Go through the business ideas and identify which ones are *an app
 > that needs to be built* (targeting a build with **Fable 5**).
 >
-> **Scope note:** This inventory currently covers the three ideas being taken
+> **Scope note:** This inventory currently covers the four ideas being taken
 > forward as named in-session on 2026-07-06. The **full master list lives in a
 > separate directory/repo** (not `rr`, and not on this machine's filesystem —
 > both scanned). It also includes a recent SaaS-idea research pass (sources:
@@ -26,6 +26,7 @@
 | 1 | **Real Estate Photos app** | 🟢 Build | App for property listing photos — capture/upload, AI enhancement, and delivery to agents. | Yes |
 | 2 | **Blossy** (flowers) | 🟢 Build | Local florist ↔ recipient preference-matching app. Recipients save flower preferences; the florist looks them up so a gift buyer gets flowers the recipient will actually love. | Yes — scope defined |
 | 3 | **Be Paid** | 🟢 Build | A get-paid / invoicing + payment-collection app (send a request, client pays). | Needs a one-line scope (see below) |
+| 4 | **Round Up** (for charity) | 🟢 Build | Rounds up everyday purchases to the nearest dollar and donates the spare change to a chosen charity. | Needs a transaction data source (or manual/demo mode for v1) |
 
 **Dropped:** ~~Website Builder – Login~~ — not an idea Tzvi wants to build. Removed
 from the list per 2026-07-06.
@@ -77,6 +78,21 @@ from the list per 2026-07-06.
     have profiles; florists likely drive signups ("save your Blossy so you always
     get flowers you love").
 
+### Round Up (for charity) — 🟢 Build
+- **Type:** App (standalone), fintech/giving.
+- **Product:** Rounds each everyday purchase up to the nearest dollar and donates
+  the spare change to a charity the user picks (e.g. $4.30 spend → $0.70 donated).
+- **Core dependency:** to round up *real* spend you need access to transactions —
+  open-banking / card-linked data (Basiq or Plaid in AU, or a card partner). That's
+  the one thing that makes this heavier than the others.
+- **Fable 5 MVP (demo-friendly, no bank integration):** user picks a charity →
+  logs/imports purchases (manual or mock feed) → app rounds each to the nearest
+  dollar → running "spare change" total → simulated donation + receipt/history.
+- **Open questions (not blocking a demo):**
+  - **Money movement** — who holds and disburses the funds (a charity partner, a
+    payments provider)? Real donations need a compliant path.
+  - **Single charity vs. choice** — one cause, or a directory the user selects from?
+
 ---
 
 ## Recommended build order for tomorrow (Fable 5)
@@ -84,6 +100,8 @@ from the list per 2026-07-06.
 1. **Real Estate Photos app** — no open decisions, start here.
 2. **Blossy** — scope is now defined (recipient profile + florist lookup); ready to build.
 3. **Be Paid** — start once invoicing-vs-payment-link is chosen (30-second call).
+4. **Round Up** — buildable as a demo tomorrow; a *real* version waits on a
+   transaction data source + a compliant way to move the donations.
 
 _(Website Builder – Login was dropped — not a build Tzvi wants.)_
 
