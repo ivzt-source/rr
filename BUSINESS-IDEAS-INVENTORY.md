@@ -24,7 +24,7 @@
 | 1 | **Be Paid** | 🟢 Build | A get-paid / invoicing + payment-collection app (send a request, client pays). | Needs a one-line scope (see below) |
 | 2 | **Real Estate Photos app** | 🟢 Build | App for property listing photos — capture/upload, AI enhancement, and delivery to agents. | Yes |
 | 3 | **Website Builder – Login** | 🟡 Clarify | Either a full website-builder product, or just the auth/login module of one. | Decide: whole product vs. login module |
-| 4 | **Blossy** (flowers) | 🟢 Build | A flowers app — likely florist ordering/delivery or a flower/plant-care companion. | Needs a one-line scope (see below) |
+| 4 | **Blossy** (flowers) | 🟢 Build | Local florist ↔ recipient preference-matching app. Recipients save flower preferences; the florist looks them up so a gift buyer gets flowers the recipient will actually love. | Yes — scope now defined |
 
 ---
 
@@ -56,20 +56,39 @@
 - **Recommendation:** Treat as ⚪ "not its own app" unless you confirm you mean (a).
 
 ### 4. Blossy (flowers) — 🟢 Build
-- **Type:** App (standalone).
-- **Assumed product:** A flowers app. Most likely **florist ordering + delivery**
-  (browse → order → deliver), possibly a **flower/plant-care** companion instead.
-- **Open question:** Commerce (sell/deliver flowers) or care/utility (identify,
-  water reminders, arrangement guides)?
-- **Fable 5 MVP (commerce reading):** Browse bouquets → order → delivery details → confirmation.
+- **Type:** App (standalone, two-sided: recipients + florists).
+- **Product (defined):** A **local florist ↔ recipient preference-matching** app.
+  Recipients (the people who *receive* flowers) save their flower preferences to a
+  "Blossy profile." A gift buyer (e.g. a husband) walks into a local florist; the
+  florist looks up the recipient's profile by **phone number and/or home address
+  (for delivery)** and assembles flowers the recipient will actually love.
+- **Core problem it solves:** *"Which flowers should I buy?"* — the recipient has
+  effectively pre-answered by saving their preferences, so the buyer doesn't guess
+  and the florist doesn't have to interrogate a clueless gift buyer.
+- **Why it works:** It's **local**. Recipients are already known to neighbourhood
+  florists (they often shop there themselves), so lookup-by-phone/address is
+  natural and trust already exists.
+- **Two sides to build:**
+  - **Recipient app** — create profile, set preferences (flower types, colours,
+    scents, allergies/dislikes, arrangement style), control lookup by phone/address.
+  - **Florist tool** — search a recipient by phone number or delivery address,
+    view their preference profile, build the order to match.
+- **Fable 5 MVP:** Recipient onboards → saves preferences → gets a lookup key
+  (phone/address). Florist enters that key → sees the preference profile.
+- **Key design questions (not blocking a v1):**
+  - **Privacy/consent** — profiles are looked up by phone/address, so a recipient
+    must opt in and control who can see what (surprise-gift vs. privacy tension).
+  - **Recipient acquisition** — the network only works once enough local recipients
+    have profiles; florists likely drive signups ("save your Blossy so you always
+    get flowers you love").
 
 ---
 
 ## Recommended build order for tomorrow (Fable 5)
 
 1. **Real Estate Photos app** — no open decisions, start here.
-2. **Be Paid** — start once invoicing-vs-payment-link is chosen (30-second call).
-3. **Blossy** — start once commerce-vs-care is chosen.
+2. **Blossy** — scope is now defined (recipient profile + florist lookup); ready to build.
+3. **Be Paid** — start once invoicing-vs-payment-link is chosen (30-second call).
 4. **Website Builder – Login** — only if you confirm you want the *full builder*;
    otherwise it's a login module folded into whichever app needs auth.
 
